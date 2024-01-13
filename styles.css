@@ -23,7 +23,6 @@ body {
 
 .tokenomics {
   background: #c9ffdc; 
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -33,9 +32,13 @@ body {
 
 .roadmap {
   background: #FFE3F2; 
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  display: flex;
+}
+
+.contact {
+  background: #8bcdff; 
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +47,7 @@ body {
 
 button {
   padding: 20px 50px;
+  font-family:  inherit;
   font-size: 1.5rem;
   cursor: pointer;
   border: 0px;
@@ -81,13 +85,154 @@ button:hover {
   box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200,   255, .25);
 }
 
-/* loader */
+
+/* image *************************************************************************************/
+
+.fig2 {
+  position: absolute;
+  right: 250px;
+  top: 1900px;
+}
+
+.fig3 {
+  position: relative;
+}
+
+
+/* header *************************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  background: #3ba355;
+  color: #f9f9f9;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 0 0 16px;
+  }
+}
+
+.navbar-overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-overlay {
+    display: none;
+  }
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-burger {
+    display: none;
+  }
+}
+
+.navbar-title {
+  margin: 0;
+  font-size: 60px;
+
+}
+
+.navbar-menu {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  translate: -100% 0;
+  width: 270px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #3ba355;
+  visibility: hidden;
+  transition: translate 0.3s;
+}
+
+body.open .navbar-menu {
+  translate: 0 0;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-menu {
+    position: static;
+    translate: 0 0;
+    width: auto;
+    background: transparent;
+    flex-direction: row;
+    visibility: visible;
+  }
+}
+
+.navbar-menu > button {
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding: 0 8px;
+}
+
+.navbar-menu > button.active {
+  color: inherit;
+}
+.navbar-menu > button.active1 {
+  color: inherit;
+}
+.navbar-menu > button.active2 {
+  color: inherit;
+}
+.navbar-menu > button.active3 {
+  color: inherit;
+}
+/* loader **************************************************************************************/
 
 .loader {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(https://i.pinimg.com/564x/6f/44/7d/6f447da1cf891ba8f0b44515f99fa0c0.jpg);
+  background: black;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -104,8 +249,8 @@ button:hover {
 .text {
   font-family: 'Delicious Handrawn', cursive;
   color: #000000;
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-size: 20px;
+  letter-spacing: 2px;
   margin-bottom: center;
   text-align: center;
   align-items: center;

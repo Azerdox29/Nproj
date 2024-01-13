@@ -6,10 +6,22 @@
     <title>CrocoVersX</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+
 </head>
 <body>
 
-    <div class="loader">
+<div class="loader">
         <span class="lettre">L</span>
         <span class="lettre">O</span>
         <span class="lettre">A</span>
@@ -17,52 +29,93 @@
         <span class="lettre">I</span>
         <span class="lettre">N</span>
         <span class="lettre">G</span>
-    </div>
+</div>
+
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+    
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">menu</span>
+        </button>
+        <h1 class="navbar-title"><img src="images/Sujet.png" alt="" width="40" height="40"></h1>
+        <nav class="navbar-menu">  
+            <button type="button"class="active">Home</button>  
+            <button type="button"class="active1">Tokenomics</button>
+            <button type="button" class="active2">Roadmap</button>
+            <button type="button"class="active3">Contact</button>   
+        </nav>
+    </nav>
 
     <div class="accueil">
-        <h1><img src="images/3.png" alt=""></h1>
         <br>
+        <br>
+        <br>
+        <h1>     
+            <br> 
+            <br>
+            <img src="images/3.png" alt="">
+        </h1>
     </div>
 
     <div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <span class="text"><p> Bienvenue dans le monde des CrocoVers, où la folie rencontre la finance !<p> Préparez-vous à plonger dans l'univers reptilien de la crypto sur MultiversX. <p> HODL comme un crocodile, rugissez comme un investisseur.</span>
-    </div>
-
-    <div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <center>
-            <button>
-                BUY $CROCO
-            </button>
-        </center>
-       
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-
-    <div class="tokenomics">
-        <img src="images/1.png" alt="" width="700" height="680">
-    </div>
-
-    <div class="roadmap">
-        <img src="images/Career Timeline (1).png" alt="">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class="text"><p> CROCOVERSX ARE 3,333 UNIQUE COLLECTIBLE CROCO WITH PROOF OF OWNERSHIP STORED ON THE MULTIVERSX BLOCKCHAIN.<p> IT'S ALSO A USELESS MEME COIN $CROCO.</span>
     </div>
 
 
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+                <button type="button"class="active">Buy $CROCO</button>
+            </center>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+
+        <div class="tokenomics">
+            <img src="images/1.png" alt="" width="700" height="680">
+        </div>
+
+        <div class="roadmap">
+
+            <figure class="fig2">
+                <img src="images/IMG_8950.PNG" alt=""  width="300" height="300">
+            </figure>
+            
+            <figure class="fig3">
+                <img src="images/Career Timeline (1).png" alt=""width="720" height="1080">
+            </figure>
+        </div>
+
+
+        <div class="contact"> 
+            <div class="btn">
+                <img src="images/X_logo_2023_original.svg" class="icone"  width="40" height="40">
+                <img src="images/Telegram_2019_Logo.svg.png" class="icone"  width="40" height="40">   
+            </div>
+        </div>
 
     <script src="app.js"></script>
 </body>
