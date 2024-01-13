@@ -205,8 +205,12 @@ body.open .navbar-overlay {
   font-size: 30px;
   align-items: center;
   justify-content: center;
-
   height: 74px;
+  margin-bottom: center;
+  text-align: center;
+  padding: 10px;
+  position:static;
+
 }
 
 .navbar-menu {
@@ -283,8 +287,7 @@ body.open .navbar-menu {
 }
 
 .text {
-  font-family: 'Delicious Handrawn', cursive;
-  color: #000000;
+  font-family: 'Delicious Handrawn', cursive;  color: #000000;
   font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: center;
