@@ -25,7 +25,7 @@ active.addEventListener('click', () => {
 active1.addEventListener('click', () => {
 
     window.scrollTo({
-        top: 750,
+        top: 600,
         left: 0,
         behavior: "smooth"
     })
@@ -35,7 +35,7 @@ active1.addEventListener('click', () => {
 active2.addEventListener('click', () => {
 
     window.scrollTo({
-        top: 1500,
+        top: 1000,
         left: 0,
         behavior: "smooth"
     })
@@ -45,7 +45,7 @@ active2.addEventListener('click', () => {
 active3.addEventListener('click', () => {
 
     window.scrollTo({
-        top: 2000,
+        top: 3050,
         left: 0,
         behavior: "smooth"
     })

@@ -21,8 +21,26 @@ body {
   align-items: center;
 }
 
+
+img{
+  max-width: 100%;
+}
+
+.fig {
+  width:auto ;
+  height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .fig {
+    justify-content: space-between;
+    padding: 0 0 0 16px;
+  }
+}
+
+
 .tokenomics {
-  background: #c9ffdc; 
+  background: #c9ffdc;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -30,19 +48,27 @@ body {
   align-items: center;
 }
 
+
+
 .roadmap {
-  background: #FFE3F2; 
-  background-size: cover;
+  background: #FFE3F2 ; 
+  background-size:auto;
+  background-position: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .contact {
-  background: #8bcdff; 
+  background-image:linear-gradient(to top, #8bcdff, #FFE3F2) ; 
   background-size: cover;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
+  width: 100%;
 }
 
 
@@ -176,8 +202,11 @@ body.open .navbar-overlay {
 
 .navbar-title {
   margin: 0;
-  font-size: 60px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
 
+  height: 74px;
 }
 
 .navbar-menu {
@@ -213,6 +242,7 @@ body.open .navbar-menu {
     visibility: visible;
   }
 }
+
 
 .navbar-menu > button {
   color: rgba(255, 255, 255, 0.5);
