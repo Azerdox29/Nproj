@@ -287,7 +287,30 @@ body.open .navbar-menu {
 }
 
 .text {
-  font-family: 'Delicious Handrawn', cursive;  color: #000000;
+  font-family: "Lilita One", cursive;  
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.text1 {
+  font-family: "Lilita One", cursive;  
+  color: #545353;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.text2 {
+  font-family: "Bree Serif", serif;
+  color: #015c1c;
   font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: center;
